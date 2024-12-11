@@ -1,0 +1,23 @@
+{% extends "base.html" %} {% block content %}
+<table>
+  <caption>
+    &#9940 Usuario já presente no banco! &#9940;
+  </caption>
+  <thead>
+    <tr>
+      <th scope="col">Atributo</th>
+      <th scope="col">Valor</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Email</th>
+      <td>{{email}}</th>
+    </tr>
+    <tr>
+      <th scope="row">Data Registro</th>
+      <td>{{data_registro}}</th>
+    </tr>
+  </tbody>
+</table>
+{% endblock %}

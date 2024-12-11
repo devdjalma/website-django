@@ -1,0 +1,126 @@
+{% extends "base.html" %} {% block content %}
+<style>
+  /* Estilo para a tabela */
+  * {
+      font-family: "Chakra Petch", sans-serif;
+    }
+
+    table {
+      width: 800px;
+      border-collapse: collapse;
+
+      margin: 1rem;
+      font-size: 16px;
+      background-color: #ffffff;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    table caption {
+      caption-side: top;
+      font-size: 20px;
+      font-weight: bold;
+      color: #333;
+      padding: 15px;
+      /* background-color: #f4f4f9; */
+      /* border-bottom: 2px solid #ddd; */
+    }
+
+    thead {
+      background-color: #007bff;
+      color: white;
+    }
+
+    thead th {
+      text-align: left;
+      padding: 12px;
+      font-weight: bold;
+    }
+
+    tbody tr:nth-child(odd) {
+      background-color: #f9f9f9;
+    }
+
+    tbody tr:nth-child(even) {
+      background-color: #ffffff;
+    }
+
+    tbody tr:hover {
+      background-color: #f1f1f1;
+    }
+
+    tbody th,
+    tbody td {
+      padding: 12px;
+      text-align: left;
+      font-size: 14px;
+      color: #555;
+    }
+
+    tbody th {
+      font-weight: bold;
+    }
+
+    tfoot {
+      background-color: #f4f4f9;
+      color: #555;
+    }
+
+    tfoot td {
+      padding: 10px;
+      text-align: left;
+      font-size: 14px;
+    }
+
+</style>
+
+
+<table>
+  <caption>
+    &#127881; Registrado com Sucesso &#127881;
+  </caption>
+  <thead>
+    <tr>
+      <th scope="col">Atributo</th>
+      <th scope="col">Valor</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Nome</th>
+      <td>{{nome}}</td>
+    </tr>
+    <tr>
+      <th scope="row">Email</th>
+      <td>{{email}}</td>
+    </tr>
+    <tr>
+      <th scope="row">Telefone</th>
+      <td>{{numero}}</td>
+    </tr>
+    <tr>
+      <th scope="row">Idade</th>
+      <td>{{idade}}</td>
+    </tr>
+    <tr>
+      <th scope="row">Grau de ensino</th>
+      <td>{{grau_ensino}}</td>
+    </tr>
+    <tr>
+      <th scope="row">Mensagem</th>
+      <td>{{mensagem}}</td>
+    </tr>
+    <tr>
+      <th scope="row">Categoria</th>
+      <td>{{user_category_id}}</td>
+    </tr>
+    <tr>
+      <th scope="row">Data Registro</th>
+      <td>{{data_registro}}</td>
+    </tr>
+  </tbody>
+</table>
+
+
+{% endblock %}

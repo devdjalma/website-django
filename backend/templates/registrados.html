@@ -1,0 +1,23 @@
+{% extends "base.html" %} {% block content %}
+<table>
+  <caption>
+    Usuario Registrados &#128221;
+  </caption>
+  <thead>
+    <tr>
+      <th scope="col">Nome</th>
+      <th scope="col">Email</th>
+      <th scope="col">Grau de Ensino2</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for user in registrados %}
+    <tr>
+      <th scope="row">{{user.nome}}</th>
+      <td>{{user.email}}</td>
+      <td>{{user.grau_ensino}}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}
